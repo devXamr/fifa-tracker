@@ -1,0 +1,1395 @@
+export const teamInfo = [
+  {
+    id: "133604",
+    name: "Arsenal",
+    shortName: "ARS",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+  },
+  {
+    id: "133601",
+    name: "Aston Villa",
+    shortName: "AVL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png",
+  },
+  {
+    id: "134301",
+    name: "Bournemouth",
+    shortName: "BOU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
+  },
+  {
+    id: "134355",
+    name: "Brentford",
+    shortName: "BRE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
+  },
+  {
+    id: "133619",
+    name: "Brighton and Hove Albion",
+    shortName: "BRI",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ywypts1448810904.png",
+  },
+  {
+    id: "133623",
+    name: "Burnley",
+    shortName: "BUR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ql7nl31686893820.png",
+  },
+  {
+    id: "133610",
+    name: "Chelsea",
+    shortName: "CHE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png",
+  },
+  {
+    id: "133632",
+    name: "Crystal Palace",
+    shortName: "CRY",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+  },
+  {
+    id: "133615",
+    name: "Everton",
+    shortName: "EVE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
+  },
+  {
+    id: "133600",
+    name: "Fulham",
+    shortName: "FUL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png",
+  },
+  {
+    id: "133635",
+    name: "Leeds United",
+    shortName: "LEE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
+  },
+  {
+    id: "133602",
+    name: "Liverpool",
+    shortName: "LIV",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+  },
+  {
+    id: "133613",
+    name: "Manchester City",
+    shortName: "MCI",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+  },
+  {
+    id: "133612",
+    name: "Manchester United",
+    shortName: "MUN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+  },
+  {
+    id: "134777",
+    name: "Newcastle United",
+    shortName: "NEW",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+  },
+  {
+    id: "133720",
+    name: "Nottingham Forest",
+    shortName: "NOT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/bk4qjs1546440351.png",
+  },
+  {
+    id: "133603",
+    name: "Sunderland",
+    shortName: "SUN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tprtus1448813498.png",
+  },
+  {
+    id: "133616",
+    name: "Tottenham Hotspur",
+    shortName: "TOT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
+  },
+  {
+    id: "133636",
+    name: "West Ham United",
+    shortName: "WHU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png",
+  },
+  {
+    id: "133599",
+    name: "Wolverhampton Wanderers",
+    shortName: "WOL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/u9qr031621593327.png",
+  },
+  {
+    id: "133727",
+    name: "Athletic Bilbao",
+    shortName: "ATH",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+  },
+  {
+    id: "133729",
+    name: "Atlético Madrid",
+    shortName: "ATM",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+  },
+  {
+    id: "133739",
+    name: "Barcelona",
+    shortName: "FCB",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+  },
+  {
+    id: "133937",
+    name: "Celta Vigo",
+    shortName: "VIG",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
+  },
+  {
+    id: "134221",
+    name: "Deportivo Alavés",
+    shortName: "ALA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
+  },
+  {
+    id: "134384",
+    name: "Elche",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
+  },
+  {
+    id: "133734",
+    name: "Espanyol",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
+  },
+  {
+    id: "133731",
+    name: "Getafe",
+    shortName: "GET",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/eyh2891655594452.png",
+  },
+  {
+    id: "134700",
+    name: "Girona",
+    shortName: "GIR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+  },
+  {
+    id: "134701",
+    name: "Leganés",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tm0adr1616443898.png",
+  },
+  {
+    id: "133732",
+    name: "Levante",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xwtxsx1473503739.png",
+  },
+  {
+    id: "133733",
+    name: "Mallorca",
+    shortName: "MLA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ssptsx1473503730.png",
+  },
+  {
+    id: "133730",
+    name: "Osasuna",
+    shortName: "OSA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+  },
+  {
+    id: "133728",
+    name: "Rayo Vallecano",
+    shortName: "RAY",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+  },
+  {
+    id: "133722",
+    name: "Real Betis",
+    shortName: "BET",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+  },
+  {
+    id: "133738",
+    name: "Real Madrid",
+    shortName: "MAD",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+  },
+  {
+    id: "135455",
+    name: "Real Oviedo",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yuwqus1447590681.png",
+  },
+  {
+    id: "133724",
+    name: "Real Sociedad",
+    shortName: "SOC",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+  },
+  {
+    id: "133735",
+    name: "Sevilla",
+    shortName: "SEV",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
+  },
+  {
+    id: "133725",
+    name: "Valencia",
+    shortName: "VAL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+  },
+  {
+    id: "133740",
+    name: "Villarreal",
+    shortName: "VLR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png",
+  },
+  {
+    id: "133667",
+    name: "AC Milan",
+    shortName: "MIL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+  },
+  {
+    id: "134782",
+    name: "Atalanta",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lrvxg71534873930.png",
+  },
+  {
+    id: "134781",
+    name: "Bologna",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
+  },
+  {
+    id: "134783",
+    name: "Cagliari",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
+  },
+  {
+    id: "134243",
+    name: "Como",
+    shortName: "COM",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
+  },
+  {
+    id: "134224",
+    name: "Cremonese",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/6ng2vy1579708291.png",
+  },
+  {
+    id: "133674",
+    name: "Fiorentina",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
+  },
+  {
+    id: "133675",
+    name: "Genoa",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
+  },
+  {
+    id: "134784",
+    name: "Hellas Verona",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/p6camf1593457737.png",
+  },
+  {
+    id: "133681",
+    name: "Inter Milan",
+    shortName: "INT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+  },
+  {
+    id: "133676",
+    name: "Juventus",
+    shortName: "JUV",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
+  },
+  {
+    id: "133668",
+    name: "Lazio",
+    shortName: "LAZ",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
+  },
+  {
+    id: "133678",
+    name: "Lecce",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
+  },
+  {
+    id: "133670",
+    name: "Napoli",
+    shortName: "NAP",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
+  },
+  {
+    id: "135728",
+    name: "Parma",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
+  },
+  {
+    id: "133859",
+    name: "Pisa",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2eso9w1579708309.png",
+  },
+  {
+    id: "133682",
+    name: "Roma",
+    shortName: "ROM",
+    badge:
+      "https://www.thesportsdb.com/images/media/team/badge/jwro2s1760820674.png",
+  },
+  {
+    id: "133701",
+    name: "Sassuolo",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
+  },
+  {
+    id: "133687",
+    name: "Torino",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+  },
+  {
+    id: "133679",
+    name: "Udinese",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+  },
+  {
+    id: "133666",
+    name: "Bayer Leverkusen",
+    shortName: "B04",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/3x9k851726760113.png",
+  },
+  {
+    id: "133664",
+    name: "Bayern Munich",
+    shortName: "BAY",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/01ogkh1716960412.png",
+  },
+  {
+    id: "133650",
+    name: "Borussia Dortmund",
+    shortName: "DOR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
+  },
+  {
+    id: "134779",
+    name: "Borussia Mönchengladbach",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/sysurw1473453380.png",
+  },
+  {
+    id: "133814",
+    name: "Eintracht Frankfurt",
+    shortName: "SGE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
+  },
+  {
+    id: "133652",
+    name: "FC Augsburg",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
+  },
+  {
+    id: "134696",
+    name: "FC Heidenheim",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lbj7g01608236988.png",
+  },
+  {
+    id: "133654",
+    name: "FC Köln",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2j1sc91566049407.png",
+  },
+  {
+    id: "133653",
+    name: "Freiburg",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/urwtup1473453288.png",
+  },
+  {
+    id: "133651",
+    name: "Hamburg",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tvtppt1473453296.png",
+  },
+  {
+    id: "133657",
+    name: "Hoffenheim",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/9hwvb21621593919.png",
+  },
+  {
+    id: "133665",
+    name: "Mainz",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/fhm9v51552134916.png",
+  },
+  {
+    id: "134695",
+    name: "RB Leipzig",
+    shortName: "RBL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/zjgapo1594244951.png",
+  },
+  {
+    id: "133813",
+    name: "St Pauli",
+    shortName: "FCP",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/5qupxa1608237013.png",
+  },
+  {
+    id: "133660",
+    name: "Stuttgart",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yppyux1473454085.png",
+  },
+  {
+    id: "134690",
+    name: "Union Berlin",
+    shortName: "FCU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/q0o5001599679795.png",
+  },
+  {
+    id: "133662",
+    name: "Werder Bremen",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tkvqan1716960454.png",
+  },
+  {
+    id: "133655",
+    name: "Wolfsburg",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/07kp421599680274.png",
+  },
+  {
+    id: "134709",
+    name: "Angers",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ix6q4w1678808069.png",
+  },
+  {
+    id: "134788",
+    name: "Auxerre",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
+  },
+  {
+    id: "133704",
+    name: "Brest",
+    shortName: "BRS",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/z69be41598797026.png",
+  },
+  {
+    id: "133862",
+    name: "Le Havre",
+    shortName: "HAC",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/aikowk1546475003.png",
+  },
+  {
+    id: "133822",
+    name: "Lens",
+    shortName: "LNS",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/3pxoum1598797195.png",
+  },
+  {
+    id: "133711",
+    name: "Lille",
+    shortName: "LIL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
+  },
+  {
+    id: "133715",
+    name: "Lorient",
+    shortName: "LOR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/sxsttw1473504748.png",
+  },
+  {
+    id: "133713",
+    name: "Lyon",
+    shortName: "LYO",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/blk9771656932845.png",
+  },
+  {
+    id: "133707",
+    name: "Marseille",
+    shortName: "OLM",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uutsyt1473504764.png",
+  },
+  {
+    id: "133883",
+    name: "Metz",
+    shortName: "MTZ",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/1iuew61688452857.png",
+  },
+  {
+    id: "133823",
+    name: "Monaco",
+    shortName: "MON",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
+  },
+  {
+    id: "133861",
+    name: "Nantes",
+    shortName: "NAN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/mla9x61678808018.png",
+  },
+  {
+    id: "133712",
+    name: "Nice",
+    shortName: "NIC",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
+  },
+  {
+    id: "135465",
+    name: "Paris FC",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
+  },
+  {
+    id: "133714",
+    name: "Paris SG",
+    shortName: "PSG",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
+  },
+  {
+    id: "133719",
+    name: "Rennes",
+    shortName: "REN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
+  },
+  {
+    id: "133882",
+    name: "Strasbourg",
+    shortName: "STR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yuxtyy1464540071.png",
+  },
+  {
+    id: "133703",
+    name: "Toulouse",
+    shortName: "TOU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
+  },
+  {
+    id: "133772",
+    name: "Ajax",
+    shortName: "AJA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/zg9tii1755495289.png",
+  },
+  {
+    id: "133957",
+    name: "Basel",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xppxwr1473791183.png",
+  },
+  {
+    id: "134108",
+    name: "Benfica",
+    shortName: "SLB",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/0pywy21662316682.png",
+  },
+  {
+    id: "135497",
+    name: "Bodø/Glimt",
+    shortName: "BOD",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uqpwwx1449165943.png",
+  },
+  {
+    id: "134571",
+    name: "Brann",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ovuad71690695412.png",
+  },
+  {
+    id: "134347",
+    name: "Breiðablik",
+    shortName: "BRE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/fkbtng1512142899.png",
+  },
+  {
+    id: "133983",
+    name: "Budućnost Podgorica",
+    shortName: "BUP",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/kckpa11579467122.png",
+  },
+  {
+    id: "133647",
+    name: "Celtic",
+    shortName: "CEL",
+    badge:
+      "https://www.thesportsdb.com/images/media/team/badge/3uv1641758780002.png",
+  },
+  {
+    id: "133789",
+    name: "Club Brugge",
+    shortName: "BRU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ov3w9j1536001717.png",
+  },
+  {
+    id: "133987",
+    name: "Crvena Zvezda",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/gz650v1567023440.png",
+  },
+  {
+    id: "134064",
+    name: "Differdange 03",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/micxvx1513257944.png",
+  },
+  {
+    id: "137902",
+    name: "Dinamo Minsk",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/8qt7b91655742503.png",
+  },
+  {
+    id: "140098",
+    name: "Drita",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/o1gp0h1596487425.png",
+  },
+  {
+    id: "133944",
+    name: "Dynamo Kyiv",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/stxrpx1447696362.png",
+  },
+  {
+    id: "140667",
+    name: "Egnatia",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/4tufos1639086825.png",
+  },
+  {
+    id: "133898",
+    name: "FC Copenhagen",
+    shortName: "FCK",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/styqtr1473535513.png",
+  },
+  {
+    id: "134005",
+    name: "FCSB",
+    shortName: null,
+    badge:
+      "https://www.thesportsdb.com/images/media/team/badge/123g021759420850.png",
+  },
+  {
+    id: "133807",
+    name: "Fenerbahçe",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/twxxvs1448199691.png",
+  },
+  {
+    id: "134620",
+    name: "Ferencváros",
+    shortName: "FER",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wk17od1688115265.png",
+  },
+  {
+    id: "133758",
+    name: "Feyenoord",
+    shortName: "FEY",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uturtx1473534803.png",
+  },
+  {
+    id: "133804",
+    name: "Galatasaray",
+    shortName: "GAL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/75fphr1537381190.png",
+  },
+  {
+    id: "138133",
+    name: "Ħamrun Spartans",
+    shortName: "Ham",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/mmqcjl1579535584.png",
+  },
+  {
+    id: "138046",
+    name: "Iberia 1999",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ifxpmk1615900731.png",
+  },
+  {
+    id: "137792",
+    name: "Inter Club d'Escaldes",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/39f7xv1578827342.png",
+  },
+  {
+    id: "134602",
+    name: "Kairat Almaty",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/sz5y1m1579285078.png",
+  },
+  {
+    id: "134018",
+    name: "KuPS",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/qmrrop1717396470.png",
+  },
+  {
+    id: "134010",
+    name: "Lech Poznań",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/8zfxyx1685597440.png",
+  },
+  {
+    id: "134046",
+    name: "Levadia Tallinn",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/iq54q61645733423.png",
+  },
+  {
+    id: "140040",
+    name: "Lincoln Red Imps",
+    shortName: "LRI",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/w1d87s1594393899.png",
+  },
+  {
+    id: "133964",
+    name: "Linfield",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ltysm01595013702.png",
+  },
+  {
+    id: "133981",
+    name: "Ludogorets Razgrad",
+    shortName: "LUD",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/35cw6l1752946925.png",
+  },
+  {
+    id: "134315",
+    name: "Maccabi Tel Aviv",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lh08ob1625167121.png",
+  },
+  {
+    id: "134166",
+    name: "Malmo FF",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wvvuqs1420764546.png",
+  },
+  {
+    id: "134084",
+    name: "Milsami Orhei",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rebsn21682081795.png",
+  },
+  {
+    id: "134299",
+    name: "Atlético Mineiro",
+    shortName: "CAM",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/x5lixs1743742872.png",
+  },
+  {
+    id: "134293",
+    name: "Bahia",
+    shortName: "BAH",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xuvtsv1473539308.png",
+  },
+  {
+    id: "134285",
+    name: "Botafogo",
+    shortName: "BOT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/bs5mbw1733004596.png",
+  },
+  {
+    id: "134736",
+    name: "Bragantino",
+    shortName: "BRA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2p7tl41701423595.png",
+  },
+  {
+    id: "134744",
+    name: "Ceará",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rxxvyp1464886685.png",
+  },
+  {
+    id: "134284",
+    name: "Corinthians",
+    shortName: "COR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vvuvps1473538042.png",
+  },
+  {
+    id: "134294",
+    name: "Cruzeiro",
+    shortName: "CRU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/upsvvu1473538059.png",
+  },
+  {
+    id: "134287",
+    name: "Flamengo",
+    shortName: "FLA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/syptwx1473538074.png",
+  },
+  {
+    id: "134296",
+    name: "Fluminense",
+    shortName: "FLU",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/stvvwp1473538082.png",
+  },
+  {
+    id: "136186",
+    name: "Fortaleza",
+    shortName: "FOR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tosmdr1532853458.png",
+  },
+  {
+    id: "134288",
+    name: "Grêmio",
+    shortName: "GRE",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/uvpwyt1473538089.png",
+  },
+  {
+    id: "134281",
+    name: "Internacional",
+    shortName: "INT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yprvxx1473538097.png",
+  },
+  {
+    id: "135887",
+    name: "Juventude",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ims5r81595004684.png",
+  },
+  {
+    id: "141181",
+    name: "Mirassol",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tfth1h1617198957.png",
+  },
+  {
+    id: "134465",
+    name: "Palmeiras",
+    shortName: "PAL",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vsqwqp1473538105.png",
+  },
+  {
+    id: "134286",
+    name: "Santos",
+    shortName: "SAN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/j8xk9g1679447486.png",
+  },
+  {
+    id: "134291",
+    name: "São Paulo",
+    shortName: "SAO",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/sxpupx1473538135.png",
+  },
+  {
+    id: "136250",
+    name: "Sport Club do Recife",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png",
+  },
+  {
+    id: "134282",
+    name: "Vasco da Gama",
+    shortName: "VAS",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ynqlxo1630521109.png",
+  },
+  {
+    id: "134280",
+    name: "Vitória",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tysrrx1473538156.png",
+  },
+  {
+    id: "133767",
+    name: "AZ Alkmaar",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/wtqwvv1473534757.png",
+  },
+  {
+    id: "133757",
+    name: "Excelsior",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/bmbn9v1625172555.png",
+  },
+  {
+    id: "133867",
+    name: "FC Volendam",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rdouic1625167940.png",
+  },
+  {
+    id: "134264",
+    name: "Fortuna Sittard",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/aqr7it1685596947.png",
+  },
+  {
+    id: "134304",
+    name: "Go Ahead Eagles",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/3hq2cy1685597026.png",
+  },
+  {
+    id: "133762",
+    name: "Groningen",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/f36qnp1666107447.png",
+  },
+  {
+    id: "133759",
+    name: "Heerenveen",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/surtsx1473534841.png",
+  },
+  {
+    id: "133766",
+    name: "Heracles Almelo",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vyyvss1473534851.png",
+  },
+  {
+    id: "133773",
+    name: "NAC Breda",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ute4en1544965805.png",
+  },
+  {
+    id: "133760",
+    name: "NEC Nijmegen",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/t5qjle1701019868.png",
+  },
+  {
+    id: "133936",
+    name: "PEC Zwolle",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/qpvqwy1473534822.png",
+  },
+  {
+    id: "133768",
+    name: "PSV Eindhoven",
+    shortName: "PSV",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xfsz6i1721297428.png",
+  },
+  {
+    id: "138004",
+    name: "SC Telstar",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xg1ss31579463659.png",
+  },
+  {
+    id: "133866",
+    name: "Sparta Rotterdam",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/upluv31586362224.png",
+  },
+  {
+    id: "133774",
+    name: "Twente",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/rsrxrt1473534783.png",
+  },
+  {
+    id: "133764",
+    name: "Utrecht",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yuhha71625167104.png",
+  },
+  {
+    id: "133776",
+    name: "Anderlecht",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/blk65s1691182512.png",
+  },
+  {
+    id: "134245",
+    name: "Antwerp",
+    shortName: "ANT",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/gawwcf1691182178.png",
+  },
+  {
+    id: "133782",
+    name: "Cercle Brugge",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/0v6uv41656017321.png",
+  },
+  {
+    id: "133826",
+    name: "Charleroi",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/7xgd0p1656072147.png",
+  },
+  {
+    id: "133863",
+    name: "Dender",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/r4ihc61654884430.png",
+  },
+  {
+    id: "133779",
+    name: "Genk",
+    shortName: "GEN",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/tp06te1534875918.png",
+  },
+  {
+    id: "133781",
+    name: "Gent",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/48e27o1750703124.png",
+  },
+  {
+    id: "133787",
+    name: "Mechelen",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/sxsxpt1447618693.png",
+  },
+  {
+    id: "133775",
+    name: "Oud-Heverlee Leuven",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/hxfhp01595605303.png",
+  },
+  {
+    id: "148488",
+    name: "RAAL La Louvière",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xs8c7n1718272881.png",
+  },
+  {
+    id: "135461",
+    name: "Sint-Truiden",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/qww8ap1534620441.png",
+  },
+  {
+    id: "133778",
+    name: "Standard Liège",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yturvp1447619528.png",
+  },
+  {
+    id: "138141",
+    name: "Union Saint-Gilloise",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ljszp41654601742.png",
+  },
+  {
+    id: "133790",
+    name: "Westerlo",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xrxtrq1447620014.png",
+  },
+  {
+    id: "133786",
+    name: "Zulte Waregem",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/6mdsut1695740517.png",
+  },
+  {
+    id: "143704",
+    name: "Alverca",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/6ljryf1691990098.png",
+  },
+  {
+    id: "134387",
+    name: "Arouca",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/vgbzjq1628853833.png",
+  },
+  {
+    id: "147479",
+    name: "AVS",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xp8oqb1688676544.png",
+  },
+  {
+    id: "134098",
+    name: "Braga",
+    shortName: "BRA",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/8g4aod1678717261.png",
+  },
+  {
+    id: "138864",
+    name: "Casa Pia",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/d8ugsc1678717133.png",
+  },
+  {
+    id: "134106",
+    name: "Estoril Praia",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/lq9h8m1628854051.png",
+  },
+  {
+    id: "140008",
+    name: "Estrela Amadora",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/2tx5621626095555.png",
+  },
+  {
+    id: "136854",
+    name: "Famalicao",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/a3f4er1563653256.png",
+  },
+  {
+    id: "134114",
+    name: "FC Porto",
+    shortName: "POR",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/xu47rb1628855600.png",
+  },
+  {
+    id: "134113",
+    name: "Gil Vicente",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/88bsg41626201503.png",
+  },
+  {
+    id: "134112",
+    name: "Moreirense",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/yrquxu1471878153.png",
+  },
+  {
+    id: "134109",
+    name: "Nacional de Madeira",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/1ln5fe1628850538.png",
+  },
+  {
+    id: "134107",
+    name: "Rio Ave",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ngbklq1628851239.png",
+  },
+  {
+    id: "136192",
+    name: "Santa Clara",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/7337a61724860742.png",
+  },
+  {
+    id: "135708",
+    name: "Sporting CP",
+    shortName: "SLI",
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/ohj6ih1628855978.png",
+  },
+  {
+    id: "135502",
+    name: "Tondela",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/o7nqff1628856081.png",
+  },
+  {
+    id: "134115",
+    name: "Vitória de Guimarães",
+    shortName: null,
+    badge:
+      "https://r2.thesportsdb.com/images/media/team/badge/af52z61628855707.png",
+  },
+];
