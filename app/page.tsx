@@ -55,9 +55,9 @@ export default function Home() {
         "first team wins (from supabase): ",
         response.data[0].team1wins
       );
-      setFirstTeamWins(response.data[0].team1wins);
-      setSecondTeamWins(response.data[0].team2wins);
-      setNumTies(response.data[0].numDraws);
+      setFirstTeamWins(Number(response.data[0].team1wins));
+      setSecondTeamWins(Number(response.data[0].team2wins));
+      setNumTies(Number(response.data[0].numDraws));
       console.log("Here's the data: ", response.data[0]);
 
       console.log("This is after the data was fetched");
@@ -79,9 +79,9 @@ export default function Home() {
       const { error } = await supabase
         .from("everything")
         .update({
-          team1wins: firstTeamWins,
-          team2wins: secondTeamWins,
-          numDraws: numTies,
+          team1wins: String(firstTeamWins),
+          team2wins: String(secondTeamWins),
+          numDraws: String(numTies),
           allMatches: allMatches,
         })
         .eq("id", 1); // 👈 assuming your only row has id = 1
@@ -97,19 +97,7 @@ export default function Home() {
   }, [allMatches]);
 
   function handleFormSubmission() {
-    console.log("The form was submitted");
-
-    /*
-    type SingleFixtureProps = {
-  team1badge: string;
-  team2badge: string;
-  team1name: string;
-  team2name: string;
-  team1score: string;
-  team2score: string;
-  date: string;
-};
-    */
+    console.log("New match was added.");
 
     const team1info = teamInfo.filter((team) => team.name === firstTeamName);
     const team2info = teamInfo.filter((team) => team.name === secondTeamName);
@@ -137,7 +125,7 @@ export default function Home() {
     } else if (currentGameWinner === "team1") {
       setFirstTeamWins((prev) => prev + 1);
     } else {
-      setSecondTeamScore((prev) => prev + 1);
+      setSecondTeamWins((prev) => prev + 1);
     }
 
     setAllMatches((prev) => [data, ...prev]);
