@@ -28,37 +28,33 @@ export default function Home() {
   const [secondTeamName, setSecondTeamName] = useState("");
   const [firstTeamScore, setFirstTeamScore] = useState("");
   const [secondTeamScore, setSecondTeamScore] = useState("");
-
   const [firstTeamWins, setFirstTeamWins] = useState(0);
   const [secondTeamWins, setSecondTeamWins] = useState(0);
   const [numTies, setNumTies] = useState(0);
-
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
-
   const [allMatches, setAllMatches] = useState<SingleFixtureType[]>([]);
+
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
 
   useEffect(() => {
     initialSyncUp();
   }, []);
 
-  type dataType = {
-    team1wins: string;
-    team2wins: string;
-    numDraws: string;
-    allMatches: SingleFixtureType[];
-  };
-
+  // fetches data from supabase after the first render
   async function initialSyncUp() {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    );
     const response = await supabase.from("everything").select();
 
     console.log("Here's the data that supabase has sent back", response.data);
 
     if (response.data) {
       setAllMatches(response.data[0].allMatches);
+      console.log(
+        "first team wins (from supabase): ",
+        response.data[0].team1wins
+      );
       setFirstTeamWins(response.data[0].team1wins);
       setSecondTeamWins(response.data[0].team2wins);
       setNumTies(response.data[0].numDraws);
@@ -79,11 +75,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    );
-
     async function updateFirstRow() {
       const { error } = await supabase
         .from("everything")
@@ -102,7 +93,7 @@ export default function Home() {
       }
     }
 
-    if (allMatches) updateFirstRow();
+    if (allMatches.length > 0) updateFirstRow();
   }, [allMatches]);
 
   function handleFormSubmission() {
