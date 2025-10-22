@@ -11,10 +11,30 @@ type SingleFixtureProps = {
 export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
   const url1 = data.team1badge;
   const url2 = data.team2badge;
+
+  console.log("This is the first team;s score", data.team1score);
+
+  const isEqual = data.team1score === data.team2score;
+  const winner = data.team1score > data.team2score ? "team1" : "team2";
+
+  console.log("is team 1 the winner? ", data.team1score > data.team2score);
+  console.log("is it equal?", data.team1score === data.team2score);
   return (
     <div className="border rounded-md border-gray-300 shadow-sm mt-5 py-2 px-2 relative mx-3">
-      <div className="absolute bg-green-100 w-[50%] h-full -z-1 left-0 top-0"></div>
-      <div className="absolute bg-red-100 w-[50%] h-full -z-1 right-0 top-0"></div>
+      <div
+        className={`absolute bg-gray-100  ${
+          !isEqual && winner === "team1" && "bg-green-100"
+        } ${
+          !isEqual && winner === "team2" && "bg-red-100"
+        } w-[50%] h-full -z-1 left-0 top-0`}
+      ></div>
+      <div
+        className={`absolute ${
+          !isEqual && winner === "team2" && "bg-green-100"
+        } ${
+          !isEqual && winner === "team1" && "bg-red-100"
+        }   bg-gray-100 w-[50%] h-full -z-1 right-0 top-0`}
+      ></div>
 
       <div className="flex justify-between mb-2 border-b border-dashed border-gray-300 pb-1">
         <div>

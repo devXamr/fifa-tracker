@@ -87,7 +87,7 @@ export default function Home() {
 
   return (
     <div className=" py-5 relative h-screen overflow-scroll">
-      <div className="border-b border-gray-200 sticky top-0 bg-white rounded-b-sm">
+      <div className="border-b border-gray-200 sticky top-0 bg-white z-10 rounded-b-sm">
         <div className="grid grid-cols-3 ">
           <div className="w-fit mx-auto px-2 pb-5">
             <div className="text-center">Ammar</div>
@@ -109,10 +109,10 @@ export default function Home() {
           open={isPopoverOpen}
         >
           <PopoverTrigger className="border mb-2 w-fit px-5 py-1 rounded-md text-sm mx-auto block">
-            Add Match
+            {isPopoverOpen ? "Close" : "Add Match"}
           </PopoverTrigger>
           <PopoverContent>
-            Place content for the popover here.
+            <div className="mb-4 text-sm">Add Match</div>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -122,28 +122,30 @@ export default function Home() {
               }}
             >
               <div>
-                <div>Select first team</div>
+                <div className="text-sm mb-1">Select first team</div>
                 <TeamSelectionCombobox
                   changeHandlerFunction={syncFirstTeamName}
                 />
-                <div>FT Score</div>
+                <div className="text-sm mb-1 mt-3">FT Score</div>
                 <input
                   type="text"
                   required
                   onChange={(e) => setFirstTeamScore(e.target.value)}
+                  className="outline-1 rounded-md py-1"
                 />
               </div>
 
-              <div>
-                <div>Select second team</div>
+              <div className="mt-5">
+                <div className="text-sm mb-1">Select second team</div>
                 <TeamSelectionCombobox
                   changeHandlerFunction={syncSecondTeamName}
                 />
-                <div>FT Score</div>
+                <div className="text-sm mb-1 mt-3">FT Score</div>
                 <input
                   type="text"
                   required
                   onChange={(e) => setSecondTeamScore(e.target.value)}
+                  className="outline-1 rounded-md py-1 mb-5"
                 />
               </div>
 
