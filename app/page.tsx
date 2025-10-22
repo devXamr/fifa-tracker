@@ -63,6 +63,8 @@ export default function Home() {
       setSecondTeamWins(response.data[0].team2wins);
       setNumTies(response.data[0].numDraws);
       console.log("Here's the data: ", response.data[0]);
+
+      console.log("This is after the data was fetched");
     }
 
     console.log("Data synced up! Good to go.");
