@@ -146,7 +146,11 @@ export default function Home() {
         <div className="grid grid-cols-3 ">
           <div className="w-fit mx-auto px-2 pb-5">
             <div className="text-center">Ammar</div>
-            <div className="text-4xl px-3 py-3 bg-green-200 text-gray-800 text-center rounded-sm mt-1">
+            <div
+              className={`text-4xl px-3 py-3 ${
+                firstTeamWins > secondTeamWins ? "bg-green-200" : "bg-red-200"
+              } text-gray-800 text-center rounded-sm mt-1`}
+            >
               {firstTeamWins}
             </div>
           </div>
