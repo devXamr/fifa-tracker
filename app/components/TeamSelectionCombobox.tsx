@@ -57,6 +57,7 @@ export function TeamSelectionCombobox({
             <CommandGroup>
               {teamInfo.map((eachTeam) => (
                 <CommandItem
+                  key={eachTeam.id}
                   value={eachTeam.name}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);

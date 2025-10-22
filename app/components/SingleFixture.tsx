@@ -9,8 +9,8 @@ type SingleFixtureProps = {
 };
 
 export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
-  let url1 = data.team1badge;
-  let url2 = data.team2badge;
+  const url1 = data.team1badge;
+  const url2 = data.team2badge;
   return (
     <div className="border rounded-md border-gray-300 shadow-sm mt-5 py-2 px-2 relative mx-3">
       <div className="absolute bg-green-100 w-[50%] h-full -z-1 left-0 top-0"></div>

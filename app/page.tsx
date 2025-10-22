@@ -156,7 +156,7 @@ export default function Home() {
       </div>
 
       {allMatches.map((each) => (
-        <SingleFixture data={each} />
+        <SingleFixture key={Math.random()} data={each} />
       ))}
     </div>
   );
