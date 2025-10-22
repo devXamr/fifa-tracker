@@ -11,6 +11,7 @@ import { TeamSelectionCombobox } from "./components/TeamSelectionCombobox";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import SingleFixture from "./components/SingleFixture";
+import { createClient } from "@supabase/supabase-js";
 
 type SingleFixtureType = {
   team1badge: string;
@@ -36,6 +37,37 @@ export default function Home() {
 
   const [allMatches, setAllMatches] = useState<SingleFixtureType[]>([]);
 
+  useEffect(() => {
+    initialSyncUp();
+  }, []);
+
+  type dataType = {
+    team1wins: string;
+    team2wins: string;
+    numDraws: string;
+    allMatches: SingleFixtureType[];
+  };
+
+  async function initialSyncUp() {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
+    const response = await supabase.from("everything").select();
+
+    console.log("Here's the data that supabase has sent back", response.data);
+
+    if (response.data) {
+      setAllMatches(response.data[0].allMatches);
+      setFirstTeamWins(response.data[0].team1wins);
+      setSecondTeamWins(response.data[0].team2wins);
+      setNumTies(response.data[0].numDraws);
+      console.log("Here's the data: ", response.data[0]);
+    }
+
+    console.log("Data synced up! Good to go.");
+  }
+
   function syncFirstTeamName(teamName: string) {
     setFirstTeamName(teamName);
   }
@@ -43,6 +75,33 @@ export default function Home() {
   function syncSecondTeamName(teamName: string) {
     setSecondTeamName(teamName);
   }
+
+  useEffect(() => {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
+
+    async function updateFirstRow() {
+      const { error } = await supabase
+        .from("everything")
+        .update({
+          team1wins: firstTeamWins,
+          team2wins: secondTeamWins,
+          numDraws: numTies,
+          allMatches: allMatches,
+        })
+        .eq("id", 1); // 👈 assuming your only row has id = 1
+
+      if (error) {
+        console.error("Error updating row:", error);
+      } else {
+        console.log("Updated first row successfully!");
+      }
+    }
+
+    if (allMatches) updateFirstRow();
+  }, [allMatches]);
 
   function handleFormSubmission() {
     console.log("The form was submitted");
