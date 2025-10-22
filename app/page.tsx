@@ -28,6 +28,10 @@ export default function Home() {
   const [firstTeamScore, setFirstTeamScore] = useState("");
   const [secondTeamScore, setSecondTeamScore] = useState("");
 
+  const [firstTeamWins, setFirstTeamWins] = useState(0);
+  const [secondTeamWins, setSecondTeamWins] = useState(0);
+  const [numTies, setNumTies] = useState(0);
+
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
   const [allMatches, setAllMatches] = useState<SingleFixtureType[]>([]);
@@ -72,6 +76,17 @@ export default function Home() {
       team2score: secondTeamScore,
       date: date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear(),
     };
+    const currentGameWinner =
+      firstTeamScore > secondTeamScore ? "team1" : "team2";
+    const isTie = firstTeamScore === secondTeamScore;
+
+    if (isTie) {
+      setNumTies((prev) => prev + 1);
+    } else if (currentGameWinner === "team1") {
+      setFirstTeamWins((prev) => prev + 1);
+    } else {
+      setSecondTeamScore((prev) => prev + 1);
+    }
 
     setAllMatches((prev) => [data, ...prev]);
 
@@ -91,15 +106,25 @@ export default function Home() {
         <div className="grid grid-cols-3 ">
           <div className="w-fit mx-auto px-2 pb-5">
             <div className="text-center">Ammar</div>
-            <div className="text-4xl px-3 py-3 bg-green-200 text-gray-800 rounded-sm mt-1">
-              50
+            <div className="text-4xl px-3 py-3 bg-green-200 text-gray-800 text-center rounded-sm mt-1">
+              {firstTeamWins}
             </div>
           </div>
-          <div className="w-fit mx-auto mt-5 ">vs</div>
+          <div className="w-fit mx-auto mt-5 ">
+            <div className="text-center">vs</div>
+            <div className="text-xs text-gray-900">
+              <div className="text-center">Draws</div>
+              <div className="text-center">{numTies}</div>
+            </div>
+          </div>
           <div className="w-fit mx-auto">
             <div className="text-center">Basil</div>
-            <div className="text-4xl bg-red-200 rounded-sm mt-1 text-gray-800 px-3 py-3">
-              45
+            <div
+              className={`text-4xl ${
+                secondTeamWins > firstTeamWins ? "bg-green-200" : "bg-red-200"
+              } rounded-sm mt-1 text-center text-gray-800 px-3 py-3`}
+            >
+              {secondTeamWins}
             </div>
           </div>
         </div>
