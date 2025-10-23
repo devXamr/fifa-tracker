@@ -141,23 +141,23 @@ export default function Home() {
   }, [allMatches]);
 
   return (
-    <div className=" py-5 relative h-screen overflow-scroll">
-      <div className="border-b border-gray-200 sticky top-0 bg-white z-10 rounded-b-sm">
+    <div className=" pb-5 relative h-screen overflow-scroll bg-[#0D0D0D] text-white">
+      <div className="border-b border-[#2E2E2E] sticky top-0 bg-[#1A1A1A] z-10 rounded-b-sm pt-5">
         <div className="grid grid-cols-3 ">
           <div className="w-fit mx-auto px-2 pb-5">
             <div className="text-center">Ammar</div>
             <div
               className={`text-4xl px-3 py-3 ${
-                firstTeamWins > secondTeamWins ? "bg-green-200" : "bg-red-200"
-              } text-gray-800 text-center rounded-sm mt-1`}
+                firstTeamWins > secondTeamWins ? "bg-[#143C2E]" : "bg-[#3C1A1A]"
+              } text-center rounded-sm mt-1`}
             >
               {firstTeamWins}
             </div>
           </div>
           <div className="w-fit mx-auto mt-5 ">
             <div className="text-center">vs</div>
-            <div className="text-xs text-gray-900">
-              <div className="text-center">Draws</div>
+            <div className="text-xs text-[#B0B0B0]">
+              <div className="text-center ">Draws</div>
               <div className="text-center">{numTies}</div>
             </div>
           </div>
@@ -165,8 +165,8 @@ export default function Home() {
             <div className="text-center">Basil</div>
             <div
               className={`text-4xl ${
-                secondTeamWins > firstTeamWins ? "bg-green-200" : "bg-red-200"
-              } rounded-sm mt-1 text-center text-gray-800 px-3 py-3`}
+                secondTeamWins > firstTeamWins ? "bg-[#143C2E]" : "bg-[#3C1A1A]"
+              } rounded-sm mt-1 text-center  px-3 py-3`}
             >
               {secondTeamWins}
             </div>
@@ -177,10 +177,10 @@ export default function Home() {
           onOpenChange={() => setIsPopoverOpen((prev) => !prev)}
           open={isPopoverOpen}
         >
-          <PopoverTrigger className="border mb-2 w-fit px-5 py-1 rounded-md text-sm mx-auto block">
+          <PopoverTrigger className="border mb-2 w-fit px-5 py-1 bg-[#3A3A3A] hover:bg-[#505050] border-[#5A5A5A] rounded-md text-sm mx-auto block">
             {isPopoverOpen ? "Close" : "Add Match"}
           </PopoverTrigger>
-          <PopoverContent>
+          <PopoverContent className="bg-[#121212] border-[#2E2E2E] text-white">
             <div className="mb-4 text-sm">Add Match</div>
             <form
               onSubmit={(e) => {
@@ -191,34 +191,41 @@ export default function Home() {
               }}
             >
               <div>
-                <div className="text-sm mb-1">Select first team</div>
+                <div className="text-sm mb-1 text-[#B0B0B0]">
+                  Select first team
+                </div>
                 <TeamSelectionCombobox
                   changeHandlerFunction={syncFirstTeamName}
                 />
-                <div className="text-sm mb-1 mt-3">FT Score</div>
+                <div className="text-sm mb-1 mt-3 text-[#B0B0B0]">FT Score</div>
                 <input
                   type="text"
                   required
                   onChange={(e) => setFirstTeamScore(e.target.value)}
-                  className="outline-1 rounded-md py-1"
+                  className="outline-1 rounded-md py-2  px-1 bg-[#1E1E1E] outline-[#333333]"
                 />
               </div>
 
               <div className="mt-5">
-                <div className="text-sm mb-1">Select second team</div>
+                <div className="text-sm mb-1 text-[#B0B0B0]">
+                  Select second team
+                </div>
                 <TeamSelectionCombobox
                   changeHandlerFunction={syncSecondTeamName}
                 />
-                <div className="text-sm mb-1 mt-3">FT Score</div>
+                <div className="text-sm mb-1 mt-3 text-[#B0B0B0]">FT Score</div>
                 <input
                   type="text"
                   required
                   onChange={(e) => setSecondTeamScore(e.target.value)}
-                  className="outline-1 rounded-md py-1 mb-5"
+                  className="outline-1 rounded-md py-2 px-1 mb-5 bg-[#1E1E1E] outline-[#333333]"
                 />
               </div>
 
-              <Button className="w-full" type="submit">
+              <Button
+                className="w-full bg-[#1F6F54] hover:bg-[#289E76] border-[#2F9E7A]"
+                type="submit"
+              >
                 Submit
               </Button>
             </form>

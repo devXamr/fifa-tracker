@@ -41,7 +41,7 @@ export function TeamSelectionCombobox({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full justify-between"
+          className="w-full justify-between bg-[#1E1E1E] outline-[#333333] border-[#333333]"
         >
           {value
             ? teamInfo.find((team) => team.name === value)?.name
@@ -49,10 +49,13 @@ export function TeamSelectionCombobox({
           <ChevronsUpDownIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
-        <Command>
-          <CommandInput placeholder="Search team..." />
-          <CommandList>
+      <PopoverContent className="w-[200px] p-0 border-[#2C2C2C] bg-[#181818] outline-[#2C2C2C] shadow-lg">
+        <Command className="border-[#2C2C2C] border-b  bg-[#181818] text-white outline-[#2C2C2C]">
+          <CommandInput
+            placeholder="Search team..."
+            className="border-b border-[#2C2C2C] outline-0"
+          />
+          <CommandList className="bg-[#181818]   text-white">
             <CommandEmpty>No Team Found.</CommandEmpty>
             <CommandGroup>
               {teamInfo.map((eachTeam) => (
@@ -63,10 +66,16 @@ export function TeamSelectionCombobox({
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
                   }}
+                  className={cn(
+                    "flex items-center text-white cursor-pointer transition-colors selection:bg-red-300",
+                    value === eachTeam.name
+                      ? "bg-[#1F6F54] text-white" // ✅ selected color
+                      : "hover:bg-[#242424]" // ✅ hover color
+                  )}
                 >
                   <CheckIcon
                     className={cn(
-                      "mr-2 h-4 w-4",
+                      "mr-2 h-4 w-4 text-white",
                       value === eachTeam.name ? "opacity-100" : "opacity-0"
                     )}
                   />

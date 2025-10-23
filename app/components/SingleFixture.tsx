@@ -1,3 +1,5 @@
+import { teamInfo } from "../data/teamData";
+
 type SingleFixtureProps = {
   team1badge: string;
   team2badge: string;
@@ -12,6 +14,17 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
   const url1 = data.team1badge;
   const url2 = data.team2badge;
 
+  const team1ShortName = teamInfo.filter(
+    (teams) => teams.name === data.team1name
+  )[0].shortName;
+
+  const team2ShortName = teamInfo.filter(
+    (teams) => teams.name === data.team2name
+  )[0].shortName;
+
+  console.log("team1shortname: ", team1ShortName);
+  console.log("team2shortname: ", team2ShortName);
+
   console.log("This is the first team;s score", data.team1score);
 
   const isEqual = data.team1score === data.team2score;
@@ -20,64 +33,57 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
   console.log("is team 1 the winner? ", data.team1score > data.team2score);
   console.log("is it equal?", data.team1score === data.team2score);
   return (
-    <div className="border rounded-md border-gray-300 shadow-sm mt-5 py-2 px-2 relative mx-3">
+    <div className="border rounded-xs border-[#2E2E2E] text-[#FFFFFF] bg-[#1A1A1A] mt-1.5 py-2 px-2 relative mx-3">
       <div
-        className={`absolute bg-gray-100  ${
-          !isEqual && winner === "team1" && "bg-green-100"
+        className={`absolute  bg-[#2B2B2B]  ${
+          !isEqual && winner === "team1" && "bg-[#143C2E]"
         } ${
           !isEqual && winner === "team2" && "bg-red-100"
         } w-[50%] h-full -z-1 left-0 top-0`}
       ></div>
       <div
         className={`absolute ${
-          !isEqual && winner === "team2" && "bg-green-100"
+          !isEqual && winner === "team2" && "bg-[#143C2E]"
         } ${
           !isEqual && winner === "team1" && "bg-red-100"
-        }   bg-gray-100 w-[50%] h-full -z-1 right-0 top-0`}
+        }   bg-[#2B2B2B] w-[50%] h-full -z-1 right-0 top-0`}
       ></div>
 
-      <div className="flex justify-between mb-2 border-b border-dashed border-gray-300 pb-1">
+      <div className="flex justify-between mb-2 border-b-[0.1px] border-dashed border-[#2E2E2E] pb-1">
         <div>
-          <div className="text-xs text-gray-500">Date</div>
-          <div className="text-sm text-gray-900">{data.date}</div>
+          <div className="text-[11px] text-[#B0B0B0]">{data.date}</div>
         </div>
         <div>
-          <div className="text-xs text-gray-500 text-right">Game</div>
-          <div className="text-sm text-gray-900">FIFA20</div>
+          <div className="text-[11px] text-[#B0B0B0]">FIFA20</div>
         </div>
       </div>
-      <div className="grid grid-cols-3">
-        <div>
+      <div className="grid grid-cols-7">
+        <div className="col-span-3 grid grid-cols-2">
+          <div className="text-right text-xs mt-2">{data.team1name}</div>
           <img
             src={url1}
             alt="logo"
             width={50}
             height={50}
-            className="w-12 mx-auto"
+            className="w-10 h-10 mx-auto"
           />
-
-          <div className="text-center text-sm mt-2 text-gray-900">
-            {data.team1name}
-          </div>
         </div>
 
-        <div className="text-center text-xl">
+        <div className="text-center text-xl col-span-1">
           <div className="py-2">
             {data.team1score} - {data.team2score}
           </div>
         </div>
 
-        <div>
+        <div className="col-span-3 grid grid-cols-2">
           <img
             src={url2}
             alt="logo"
             width={50}
             height={50}
-            className="w-12 mx-auto"
+            className="w-10 h-10 mx-auto"
           />
-          <div className="text-center text-sm mt-2 text-gray-900">
-            {data.team2name}
-          </div>
+          <div className="text-left text-xs mt-2">{data.team2name}</div>
         </div>
       </div>
     </div>
