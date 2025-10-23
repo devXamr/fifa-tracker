@@ -57,9 +57,14 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
           <div className="text-[11px] text-[#B0B0B0]">FIFA20</div>
         </div>
       </div>
-      <div className="grid grid-cols-7">
+      <div className="grid grid-cols-7 overflow-hidden">
         <div className="col-span-3 grid grid-cols-2">
-          <div className="text-right text-xs mt-2">{data.team1name}</div>
+          <div
+            lang="en"
+            className="text-right text-xs mt-2 wrap-break-word hyphens-auto"
+          >
+            {data.team1name}
+          </div>
           <img
             src={url1}
             alt="logo"
@@ -83,7 +88,12 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
             height={50}
             className="w-10 h-10 mx-auto"
           />
-          <div className="text-left text-xs mt-2">{data.team2name}</div>
+          <div
+            lang="en"
+            className="text-left text-xs mt-2 hyphens-auto wrap-break-word"
+          >
+            {data.team2name}
+          </div>
         </div>
       </div>
     </div>
