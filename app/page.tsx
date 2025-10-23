@@ -141,10 +141,10 @@ export default function Home() {
   }, [allMatches]);
 
   return (
-    <div className=" pb-5 relative h-screen overflow-scroll bg-[#0D0D0D] text-white">
-      <div className="border-b border-[#2E2E2E] sticky top-0 bg-[#1A1A1A] z-10 rounded-b-sm pt-5">
-        <div className="grid grid-cols-3 ">
-          <div className="w-fit mx-auto px-2 pb-5">
+    <div className=" pb-5 relative h-screen overflow-scroll bg-[#0D0D0D] text-white font-primary">
+      <div className="border-b border-[#2E2E2E] sticky top-0 bg-[#1A1A1A] z-10 rounded-b-lg pt-5 shadow-md">
+        <div className="grid grid-cols-3 border-b border-[#2E2E2E] border-dashed">
+          <div className="w-fit mx-auto px-2 pb-2">
             <div className="text-center">Ammar</div>
             <div
               className={`text-4xl px-3 py-3 ${
@@ -177,7 +177,7 @@ export default function Home() {
           onOpenChange={() => setIsPopoverOpen((prev) => !prev)}
           open={isPopoverOpen}
         >
-          <PopoverTrigger className="border mb-2 w-fit px-5 py-1 bg-[#3A3A3A] hover:bg-[#505050] border-[#5A5A5A] rounded-md text-sm mx-auto block">
+          <PopoverTrigger className="border mt-2 mb-2 w-fit px-5 py-1 bg-[#3A3A3A] hover:bg-[#505050] border-[#5A5A5A] rounded-md text-sm mx-auto block">
             {isPopoverOpen ? "Close" : "Add Match"}
           </PopoverTrigger>
           <PopoverContent className="bg-[#121212] border-[#2E2E2E] text-white">

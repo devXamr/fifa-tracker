@@ -36,7 +36,7 @@ export function TeamSelectionCombobox({
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
+      <PopoverTrigger asChild className="font-primary">
         <Button
           variant="outline"
           role="combobox"

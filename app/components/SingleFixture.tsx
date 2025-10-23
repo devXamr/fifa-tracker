@@ -33,7 +33,7 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
   console.log("is team 1 the winner? ", data.team1score > data.team2score);
   console.log("is it equal?", data.team1score === data.team2score);
   return (
-    <div className="border rounded-xs border-[#2E2E2E] text-[#FFFFFF] bg-[#1A1A1A] mt-1.5 py-2 px-2 relative mx-3">
+    <div className="border rounded-xs border-[#2E2E2E] text-[#FFFFFF] bg-[#1A1A1A] mt-1.5 py-2 px-2 relative mx-3 font-primary">
       <div
         className={`absolute  bg-[#2B2B2B]  ${
           !isEqual && winner === "team1" && "bg-[#143C2E]"
@@ -74,9 +74,11 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
           />
         </div>
 
-        <div className="text-center text-xl col-span-1">
-          <div className="py-2">
-            {data.team1score} - {data.team2score}
+        <div className="text-center text-sm col-span-1 rounded-sm mt-1 bg-[#1F1F1F]  border-[#2E2E2E] border h-fit divide-x-2">
+          <div className="py-1 h-fit px-2 flex justify-between ">
+            <div className="font-medium">{data.team1score} </div>
+            <div className="text-xs mt-0.5 text-gray-700">|</div>
+            <div className="font-medium">{data.team2score}</div>
           </div>
         </div>
 
