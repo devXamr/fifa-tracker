@@ -3,6 +3,9 @@ import axios from "axios";
 
 const leagues = [
   "English Premier League",
+  "English Championship", // EFL Championship
+  "English League One", // EFL League One
+  "English League Two",
   "Spanish La Liga",
   "Italian Serie A",
   "German Bundesliga",

@@ -14,17 +14,6 @@ export default function SingleFixture({ data }: { data: SingleFixtureProps }) {
   const url1 = data.team1badge;
   const url2 = data.team2badge;
 
-  const team1ShortName = teamInfo.filter(
-    (teams) => teams.name === data.team1name
-  )[0].shortName;
-
-  const team2ShortName = teamInfo.filter(
-    (teams) => teams.name === data.team2name
-  )[0].shortName;
-
-  console.log("team1shortname: ", team1ShortName);
-  console.log("team2shortname: ", team2ShortName);
-
   console.log("This is the first team;s score", data.team1score);
 
   const isEqual = data.team1score === data.team2score;
